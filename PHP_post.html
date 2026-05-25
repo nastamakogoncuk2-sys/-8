@@ -1,0 +1,24 @@
+﻿<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <title>Форма POST</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="page">
+        <h1>Форма для підписки на журнал CHIP</h1>
+        <form action="processing_post.php" method="POST">
+            <label>Ім'я <input type="text" name="first_name" value="Настя"></label>
+            <label>Прізвище <input type="text" name="last_name" value="Макогончук"></label>
+            <label>E-mail <input type="email" name="email" value="nastya@example.com"></label>
+            <p>Виберіть форму оплати:</p>
+            <label><input type="radio" name="plata" value="готівка" checked> готівка</label><br>
+            <label><input type="radio" name="plata" value="переказ"> переказ</label><br>
+            <label><input type="radio" name="plata" value="web-money"> web-money</label><br><br>
+            <input type="submit" value="Відправити">
+            <input type="reset" value="Скасувати">
+        </form>
+    </div>
+</body>
+</html>
